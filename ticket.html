@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Date Picker</title>
+
+	<link rel="stylesheet" href="main.css" />
+
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,
+wght@0,100;0,300;0,400;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+<body>
+	<section class="header">
+		<div class="text-box4">
+			<div class="home-button-wrapper">
+				<a href="index.html" class="home-button">← Home</a>
+			</div>
+			<span class="underline"> <h1>GRAB <span>YOUR </span>TICKET</h1></span>
+				
+	
+			 </div>
+			 <div class="navigation-box">
+				<div class="nav-item active">Ticket Page</div>
+				<div class="nav-item">Details Page</div>
+				<div class="nav-item">Purchase Page</div>
+				<div class="nav-item">Confirmation Page</div>
+			</div>
+   
+	</section>
+    <section class="flexing">
+<!-- Left side content -->
+<div class="left-side">
+
+	 <!-- Calendar and time slot selector -->
+	 <div class="calendar-time-slot">
+
+
+    <div class="flex-container">
+    <section class="dateselect">
+       <center> <h2 style="color:aliceblue; font-size: 40px;">Select a date</h2></center>
+	<div class="date-picker">
+		<div class="selected-date"></div>
+
+		<div class="dates">
+			<div class="month">
+				<div class="arrows prev-mth">&lt;</div>
+				<div class="mth"></div>
+				<div class="arrows next-mth">&gt;</div>
+			</div>
+
+			<div class="days"></div>
+		</div>
+	</div>
+    </section>
+
+ 
+ 
+
+   <!--- <p id="displayDate"></p>-->
+   <section class="selecttime">
+
+   
+  <center><h1 style="font-size: 40px; color:aliceblue;">Time Slot Selection</h1></center>
+  <center><div class="dropdown">
+		<button class="dropbtn" style="color: aliceblue; ">Select a time slot</button>
+		<div id="dropdown-content" class="dropdown-content"></div>
+	</div>
+</center>
+
+    </section>
+    </div>
+
+</div>
+
+
+ <!-- Ticket category selector -->
+ <div class="ticket-selector-container">
+
+
+   <section class="selecting" style="font-size: 15px;">
+	<div id="ticket-selector">
+		<!-- Other categories... -->
+		<div class="ticket-category" id="SL-Adult">
+			<span class="ticket-name">SL Adult</n><p>(Above 15 years old)</p></span>
+			<div class="controls">
+				<button class="minus-btn">-</button>
+				<span class="ticket-count">0</span>
+				<button class="plus-btn">+</button>
+			</div>
+		</div>
+		<!-- Other categories... -->
+		<div class="ticket-category" id="SL-Child">
+			<span class="ticket-name">SL Child</n><p>(5 to 14 years old)</p></span>
+			
+			<div class="controls">
+				<button class="minus-btn">-</button>
+				<span class="ticket-count">0</span>
+				<button class="plus-btn">+</button>
+			</div>
+			
+		</div>
+
+		<div class="ticket-category" id="Foreigner-Adult">
+			<span class="ticket-name">Foreigner Adult</n><p>(Above 15 years old)</p></span>
+			<div class="controls">
+				<button class="minus-btn">-</button>
+				<span class="ticket-count">0</span>
+				<button class="plus-btn">+</button>
+			</div>
+		</div>
+
+		<div class="ticket-category" id="Foreigner-Child">
+			<span class="ticket-name">Foreigner Child</n><p>(5 to 14 years old)</p></span>
+			<div class="controls">
+				<button class="minus-btn">-</button>
+				<span class="ticket-count">0</span>
+				<button class="plus-btn">+</button>
+			</div>
+		</div>
+
+		<div class="ticket-category" id="Infant">
+			<span class="ticket-name">Infant</n><p>(Under 4 years)</p></span>
+			<div class="controls">
+				<button class="minus-btn">-</button>
+				<span class="ticket-count">0</span>
+				<button class="plus-btn">+</button>
+			</div>
+		</div>
+	</div>
+	
+
+	
+   </section>
+</div>
+</div>
+
+
+<!-- Right side content -->
+<div class="right-side">
+
+	<section>
+		<table class="table">
+			<tr>
+				<td>Category</td>
+				<td>Time Period</td>
+				<td>Charges</td>
+			</tr>
+			<tr>
+				<td>SL Adult</td>
+				<td>Normal hour</td>
+				<td>4 USD</td>
+			</tr>
+			<tr>
+				<td>SL Adult</td>
+				<td>Peak hour</td>
+				<td>6 USD</td>
+			</tr>
+			<tr>
+				<td>SL Child</td>
+				<td>Normal hour</td>
+				<td>2 USD</td>
+			</tr>
+			<tr>
+				<td>SL Child</td>
+				<td>Peak hour</td>
+				<td>3 USD</td>
+			</tr>
+			<tr>
+				<td>Foreigner Adult</td>
+				<td>Normal hour</td>
+				<td>10 USD</td>
+			</tr>
+			<tr>
+				<td>Foreigner Adult</td>
+				<td>Peak hour</td>
+				<td>13 USD</td>
+			</tr>
+			<tr>
+				<td>Foreigner Child</td>
+				<td>Normal hour</td>
+				<td>5 USD</td>
+			</tr>
+			<tr>
+				<td>Foreigner Child</td>
+				<td>Peak hour</td>
+				<td>8 USD</td>
+			</tr>
+			<tr>
+				<td>Infant</td>
+				<td>Any hour</td>
+				<td>Free</td>
+			</tr>
+	
+		</table>
+	</section>
+
+   <section id="summary-section">
+    <h2>Summary</h2>
+	<table class="table">
+        <tr>
+            <td>Date</td>
+            <td id="summary-date"></td>
+        </tr>
+        <tr>
+            <td>Time Slots Selected</td>
+            <td id="time-slots"></td>
+        </tr>
+        <tr>
+			<td>Total Duration</td>
+			<td id="total-duration"></td>
+		</tr>
+		<tr>
+            <td>Tickets</td>
+            <td>Charges</td>
+        </tr>
+        <tr>
+            <td>Charges for <span id="quantity-SL-Adult"></span> SL Adult</td>
+            <td id="charges-SL-Adult"></td>
+        </tr>
+        <tr>
+            <td>Charges for <span id="quantity-SL-Child"></span> SL Child</td>
+            <td id="charges-SL-Child"></td>
+        </tr>
+        <tr>
+            <td>Charges for <span id="quantity-Foreigner-Adult"></span> Foreigner Adult</td>
+            <td id="charges-Foreigner-Adult"></td>
+        </tr>
+        <tr>
+            <td>Charges for <span id="quantity-Foreigner-Child"></span> Foreigner Child</td>
+            <td id="charges-Foreigner-Child"></td>
+        </tr>
+        <tr>
+            <td>Charges for <span id="quantity-Infant"></span>Infant</td>
+            <td id="charges-Infant">Free</td>
+        </tr>
+        <tr>
+            <td>Total Amount Payable</td>
+            <td id="total-amount-payable"> $</td>
+        </tr>
+    </table>
+</section>
+
+
+</div>
+
+	
+	
+	</section>
+	<section>
+		<div>
+			<center>
+			<button id="confirmButton">Confirm</button>
+			</center>
+		</div>
+	</section>
+
+
+	<section>
+		<button id="submit-button">Submit</button>
+	</section>
+	<button id="submit-button">Submit</button>
+<br><br><br><br>
+												
+	<footer>
+		<div class="footer-content">
+		  <h1>Follow Us On</h1>
+		  <div class="social-icons">
+			<a href="#"><i class="fab fa-facebook"></i></a>
+			<a href="#"><i class="fab fa-instagram"></i></a>
+			<a href="#"><i class="fab fa-youtube"></i></a>
+			<a href="#"><i class="fab fa-tiktok"></i></a>
+		  </div>
+		  <div class="contact-info">
+			
+			<p>Address: 123 Sea Road, Hikkaduwa, Sri Lanka</p>
+			<p>Contact Number: +94 7678 49492</p>
+			<p>Email: hikkahatcherie@.com</p>
+  
+		  </div>
+		</div>
+		<p>Made by <i class="fas fa-heart"></i> Haritha Mandara</p>    
+	  </footer>
+
+	  
+	<script src="main.js"></script>
+</body>
+</html>

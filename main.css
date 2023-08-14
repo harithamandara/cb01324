@@ -1,0 +1,1011 @@
+* {
+	margin: 0;
+	padding: 0;
+	/*box-sizing: border-box;*/
+}
+
+.header {
+  
+
+    min-height:60vh;
+    width:100%;
+   background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/hikk10.jpg);
+  /*  background-image:linear-gradient(rgba(0, 0, 0, 0.2),#e7efed),url(images/image4.jpg); */
+   background-position:center;
+    background-size: cover;
+    position:relative;
+    
+  }
+.header2{
+	min-height:60vh;
+    width:100%;
+   background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/image10.jpeg);
+  /*  background-image:linear-gradient(rgba(0, 0, 0, 0.2),#e7efed),url(images/image4.jpg); */
+   background-position:center;
+    background-size: cover;
+    position:relative;
+}
+.header3{
+	min-height:60vh;
+    width:100%;
+   background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/image13.jpeg);
+  /*  background-image:linear-gradient(rgba(0, 0, 0, 0.2),#e7efed),url(images/image4.jpg); */
+   background-position:center;
+    background-size: cover;
+    position:relative;
+}
+
+
+.header4{
+	min-height:60vh;
+    width:100%;
+   background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/image12.jpeg);
+  /*  background-image:linear-gradient(rgba(0, 0, 0, 0.2),#e7efed),url(images/image4.jpg); */
+   background-position:center;
+    background-size: cover;
+    position:relative;
+}
+
+.home-button-wrapper {
+    position: absolute;
+    top: 10px; /* Adjust this value to move the button up or down */
+    left: 10px; /* Adjust this value to move the button left or right */
+}
+
+.home-button {
+    display: inline-block;
+    background-color: #FFD700; /* Gold background */
+    color: #000; /* Text color */
+    padding: 10px 20px; /* Adjust the padding to change button size */
+    border: none;
+    border-radius: 25px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+    font-weight: 600; /* Bold text */
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition effect */
+}
+
+.home-button:hover {
+    background-color: #FFB300; /* Darker gold background on hover */
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
+
+
+  .text-box4{
+    width:90%;
+    color:#fbe8e8;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align:center;
+  
+  }
+  .text-box4 h1{
+    font-size:90px;
+    text-shadow: #000;
+	margin: 30px 0px;
+	color: #fffbfb;
+	
+	font-weight: 900;
+	text-align: center;
+  }
+  
+  .text-box4 h2{
+    font-size:0px;
+    text-shadow: #000;
+  }
+  .text-box4 h1 span {
+	font-weight: 400;
+}
+.text-box4 h2{
+    margin: 20px 0px;
+	color: #313131;
+	font-size: 35px;
+	font-weight:800;
+	text-align: center;
+}
+body {
+	/*background-color: #f3f2f1;*/
+	font-family: 'Saira', Arial, Helvetica, sans-serif;
+}
+
+.navigation-box {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 30px; /* Adjust the height as you like */
+    background-color: rgba(56, 54, 54, 0.7); /* Slightly transparent black background */
+}
+
+.nav-item {
+    flex: 1; /* This makes each item take an equal width */
+    text-align: center;
+    line-height: 30px; /* This will vertically center the text */
+    color: #ffffff; /* Text color */
+    transition: background-color 0.3s; /* For a smooth transition effect when hovered */
+}
+
+.nav-item.active {
+    background-color: #2dc382; /* Gold background for active item */
+    color: #534b4b; /* Text color for active item */
+}
+
+.nav-item:hover {
+    background-color: rgba(255, 255, 255, 0.3); /* Slightly transparent white background on hover */
+}
+
+/*
+h1 {
+	margin: 30px 0px;
+	color: #313131;
+	font-size: 142px;
+	font-weight: 900;
+	text-align: center;
+}
+
+h1 span {
+	font-weight: 300;
+}
+h2{
+    margin: 20px 0px;
+	color: #313131;
+	font-size: 35px;
+	font-weight:800;
+	text-align: center;
+
+}*/
+
+.dateselect{
+	background-color: #816c6c;
+	height: 200px;
+	padding: 5%;
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
+.date-picker {
+	position: relative;
+	width: 100%;
+	max-width: 320px;
+	height: 60px;
+	background-color: #FFF;
+	margin: 30px auto;
+	box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+
+	cursor: pointer;
+	user-select: none;
+}
+
+.date-picker:hover {
+	background-color: #F3F3F3;
+}
+
+.date-picker .selected-date {
+	width: 100%;
+	height: 100%;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	color: #313131;
+	font-size: 28px;
+}
+
+.date-picker .dates {
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	right: 0;
+
+	background-color: #FFF;
+}
+
+.date-picker .dates.active {
+	display: block;
+}
+
+.date-picker .dates .month {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 2px solid #EEE;
+}
+
+.date-picker .dates .month .arrows {
+	width: 35px;
+	height: 35px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #313131;
+	font-size: 20px;
+}
+
+.date-picker .dates .month .arrows:hover {
+	background-color: #F3F3F3;
+}
+
+.date-picker .dates .month .arrows:active {
+	background-color: #6f8d83;
+}
+
+.date-picker .dates .days {
+	display: grid;
+	grid-template-columns: repeat(7, 1fr);
+	height: 200px;
+}
+.date-picker .dates .days .day { 
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #313131;
+}
+.date-picker .dates .days .day.selected {
+	background-color: #638378;
+
+}
+
+
+
+/*time selector*/
+
+
+.selecttime{
+	margin-top: 5%;
+	margin-bottom: 5%;
+	background-color: #785c5c;
+	height: 200px;
+	align-items: center;
+	padding: 5%;
+}
+
+body {
+	background-color: #F0F0F0;
+	font-family: Arial, sans-serif;
+	padding: 30px;
+	/*text-align: center;*/
+}
+
+.dropdown {
+	position: relative;
+	display: inline-block;
+	
+	
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f6f6f6;
+	min-width: 260px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+}
+
+.dropdown-content div {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+}
+
+.dropdown-content div:hover {
+	background-color: #f1f1f1
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+.dropbtn {
+	background-color: #4CAF50;
+	color: white;
+	padding: 16px;
+	font-size: 16px;
+	border: none;
+	cursor: pointer;
+	
+}
+
+.dropbtn:hover, .dropbtn:focus {
+	background-color: #3e8e41;
+}
+
+#confirmButton {
+	background-color: #008CBA;
+	color: white;
+	padding: 16px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	transition-duration: 0.4s;
+	cursor: pointer;
+}
+
+#confirmButton:hover {
+	background-color: white; 
+	color: black; 
+	border: 2px solid #008CBA;
+}
+
+#submit-button {
+    display: none;
+	position: absolute;
+	right: 100px;
+	width: 200px;
+	height: 50px;
+	background-color: #00CA85;
+	color: #FFF;
+}
+
+#payButton{
+	width: 200px;
+	height: 50px;
+	background-color: #00CA85;
+	color: #FFF;
+}
+
+/*this is a flex grid to display right and left*/
+/*.flex-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dateselect, .selecttime {
+    width: 45%; /* Adjust this value as needed *//*
+}*/
+
+
+
+/*this is the area showing the tticket category selector*/
+
+.selecting{
+
+	background-color: #785c5c;
+	justify-content: center;
+	padding: 2%;
+}
+
+.ticket-category {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.ticket-name {
+    flex-grow: 1;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100px; /* Adjust as needed */
+}
+
+.minus-btn, .plus-btn {
+    padding: 5px 10px;
+    border: none;
+    background-color: #007BFF; /* Change color as needed */
+    color: #fff;
+    cursor: pointer;
+}
+
+.ticket-count {
+    margin: 0 10px;
+}
+
+/*reducing the space between the ticket category name and the buttons*/
+/*.ticket-category span.ticket-name {
+    margin-bottom: 0%;																																																																																																																																																																																																																																																							0;   
+    padding-bottom: 0%; 
+	margin-left:10%;
+	margin-right:40%;
+	
+}
+
+.ticket-category .controls {
+    margin-top: 0%;   
+    padding-top: 0%;   
+	margin-left:10%;
+	margin-right:40%;
+
+}*/
+
+
+
+
+
+
+
+/*this is the part of the css of details page*/
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"], 
+input[type="tel"], 
+input[type="email"], 
+select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 5px;
+}
+
+small {
+    color: grey;
+}
+
+/*this css part of the left and right for the ticket page*/
+.flexing {
+    display: flex;
+    justify-content: space-between; /* Pushes left and right side apart */
+}
+
+.left-side {
+    flex: 2; /* Left side takes 2/3 of the width */
+    display: flex;
+    flex-direction: column; /* Arranges children vertically */
+    justify-content: space-between; /* Creates space between calendar and ticket selector */
+    padding-right: 20px; /* Space before the right side */
+}
+
+.calendar-time-slot {
+    display: flex;
+    flex-direction: column; /* Arranges calendar and time slot vertically */
+}
+
+.right-side {
+    flex: 1; /* Right side takes 1/3 of the width */
+}
+
+
+/* Footer part */
+
+footer {
+	background-color: #4d4b4b78;
+	padding: 20px;
+	text-align: center;
+	margin-top: 20px;
+  }
+  
+  .footer-content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+  }
+  
+  h1 {
+	font-size: 24px;
+	margin-bottom: 10px;
+  }
+  
+  .social-icons {
+	margin-bottom: 20px;
+  }
+  
+  .social-icons a {
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background-color: #000;
+	margin: 5px;
+	text-align: center;
+	line-height: 40px;
+	color: #fff;
+	font-size: 20px;
+  }
+  
+  .contact-info p {
+	margin: 0.5px 5px;
+	line-height: 1;
+	color: #000;
+  }
+  
+/* this part is for table */
+/* Styling for the table */
+.table {
+    width: 80%; /* Make table take the full width of its container */
+    border-collapse: collapse; /* Remove any spacing between table cells */
+    margin: 15px 0; /* Margin at the top and bottom for separation */
+    font-family: Arial, sans-serif; /* Set a simple font */
+}
+
+/* Styling for table headers and cells */
+.table th,
+.table td {
+    border: 1px solid #cccccc; /* Light gray border */
+    padding: 8px 12px; /* Padding for text inside cells */
+    text-align: left; /* Left-align text */
+}
+
+/* Styling for table headers */
+.table th {
+    background-color: #f2f2f2; /* Light gray background for headers */
+    font-weight: bold; /* Bold text for headers */
+}
+
+/* Styling for table rows when hovered */
+.table tr:hover {
+    background-color: #f5f5f5; /* Slightly different gray for hover effect */
+}
+
+/* If you need fixed height for cells */
+.table td {
+    height: 30px; /* You can adjust this value as per your needs */
+}
+
+
+/* this is for flexing the details page */
+
+/* Main Wrapper */
+.content-wrapper {
+    display: flex; /* Makes its children sit side by side */
+    justify-content: space-between; /* Places maximum space between the form and the table */
+    padding: 20px; /* Some spacing around */
+}
+
+/* Form Wrapper */
+.form-wrapper {
+    flex: 1; /* Takes up the available space equally with table-wrapper */
+    padding: 20px; /* Some spacing around */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Optional: A little shadow for depth */
+}
+
+/* Table Wrapper */
+.table-wrapper {
+    flex: 1; /* Takes up the available space equally with form-wrapper */
+    padding: 20px; /* Some spacing around */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Optional: A little shadow for depth */
+	align-items: center;
+}
+
+/* Some styles for your table */
+.table {
+    width: 100%; /* Full width of its container */
+    border-collapse: collapse; /* Removes double borders */
+}
+
+.table td, .table th {
+    border: 1px solid #ddd; /* Light grey border */
+    padding: 8px; /* Some space inside cells */
+}
+
+.table tr:nth-child(even) {
+    background-color: #f2f2f2; /* Every other row has a light grey background */
+}
+
+.table tr:hover {
+    background-color: #ddd; /* Hover effect */
+}
+
+.table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+}
+/* payment page flexing */
+.content-container {
+    display: flex;                 
+    justify-content: space-between; 
+    align-items: start;             
+    gap: 2rem;                      
+}
+
+.paymentdetails {
+    flex: 0 0 60%;          /* Adjusted to 30% */
+    padding: 1rem;          
+    box-sizing: border-box; /* This ensures that the padding is included in the width */
+}
+
+.paytable table {
+    flex: 1;               
+    padding: 1rem;         
+    box-sizing: border-box; 
+}
+
+
+.dateselect{
+	background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/image12.jpeg);
+}
+
+/* .selecttime{
+	color: #fff;
+	font-size: 60px;
+	font-weight: 600;
+	margin-bottom: 20px;
+	text-align: center;
+} */
+
+/* ticket page media quieri */
+
+/* ... Your other styles ... */
+
+@media (max-width: 700px) {
+
+    /* Example: Make the header text smaller */
+    .header h1 {
+        font-size: 24px;
+    }
+
+    /* Stack navigation items vertically */
+    .navigation-box .nav-item {
+        display: block;
+        margin: 5px 0;
+    }
+
+    /* Adjust the font size of date and time slot headings */
+    .dateselect h2, .selecttime h1 {
+        font-size: 24px;
+    }
+
+    /* If your left-side and right-side content are side by side, stack them vertically */
+    .left-side, .right-side {
+        width: 100%;
+    }
+
+    /* Adjust the table to be more mobile-friendly */
+    .table {
+        width: 100%;
+        display: block;
+        overflow-x: auto; /* Allows the user to scroll if the table overflows the container */
+    }
+
+    /* Adjust button size */
+    #confirmButton, #submit-button {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+
+    /* Footer adjustments */
+    .footer-content {
+        flex-direction: column;
+    }
+
+      /* Assuming the parent container of .left-side and .right-side is .flexing */
+	  .flexing {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Ensure left side takes full width and appears first */
+    .left-side {
+        width: 100%;
+        order: 1;
+    }
+
+    /* Ensure right side takes full width and appears after the left side */
+    .right-side {
+        width: 100%;
+        order: 2;
+    }
+
+}
+
+
+
+/* media quiree for details page */
+
+@media (max-width: 700px) {
+    /* Adjusting the wrapper's layout for mobile views */
+    .content-wrapper {
+        display: block; /* Stacking content vertically */
+    }
+
+    /* Styling for the form wrapper (left side) */
+    .form-wrapper {
+        width: 100%; /* Full width */
+        margin-right: 0;
+        margin-bottom: 20px; /* Space between form and table on mobile */
+    }
+
+    /* Styling for the table wrapper (right side) */
+    .table-wrapper {
+        width: 100%; /* Full width */
+    }
+
+    /* Styling for the header section */
+    .header2 .text-box4, .header2 .navigation-box {
+        text-align: center; /* Centering content in header */
+    }
+
+     /* Example: Make the header text smaller */
+	 .header2 h1 {
+        font-size: 24px;
+    }
+
+    /* Stack navigation items vertically */
+    .navigation-box .nav-item {
+        display: block;
+        margin: 5px 0;
+    }
+
+    /* You may want to adjust font-sizes, paddings, or other styling for mobile views. */
+}
+
+@media (max-width: 700px) {
+    
+    /* Adjusting the home button and the title for better visibility and centering */
+    .header2 .home-button-wrapper {
+        text-align: center; /* Center the home button */
+        margin-bottom: 10px; /* Some space below the home button */
+    }
+
+    .header2 .text-box4 h1 {
+        font-size: 24px; /* Reducing the size for mobile */
+    }
+
+    /* Centering the header content */
+    .header2 .text-box4 {
+        text-align: center;
+    }
+
+    /* Adjusting navigation items for better visibility on mobile */
+    .header2 .navigation-box {
+        text-align: center; /* Center the navigation items */
+    }
+    
+    .header2 .navigation-box .nav-item {
+        display: block; /* Each navigation item on a new line */
+        margin: 10px 0; /* Spacing between navigation items */
+    }
+
+    /* Depending on the existing styles, you might also want to adjust padding, margins, or other styles for mobile readability and aesthetics. */
+}
+@media (max-width: 700px) {
+    
+    /* Positioning the home button more towards the top and centering it */
+    .header2 .home-button-wrapper {
+        text-align: center; /* Center the home button */
+        margin-bottom: 10px; /* Space below the home button */
+        margin-top: 5px; /* Reduce the top margin to move it up */
+    }
+
+    .header2 .text-box4 h1 {
+        font-size: 24px; /* Reducing the size for mobile */
+    }
+
+    /* Centering the header content */
+    .header2 .text-box4 {
+        text-align: center;
+    }
+
+    /* Adjusting navigation items for better visibility on mobile */
+    .header2 .navigation-box {
+        text-align: center; /* Center the navigation items */
+    }
+    
+    .header2 .navigation-box .nav-item {
+        display: block; /* Each navigation item on a new line */
+        margin: 10px 0; /* Spacing between navigation items */
+    }
+}
+
+
+/* button  */
+.btnsub {
+    text-align: center; /* Centers the button in the div */
+    margin-top: 20px; /* Adds some margin at the top */
+}
+
+.btnsub input[type="submit"] {
+    background-color: #007BFF; /* A blue color */
+    border: none; /* Removes the default border */
+    border-radius: 5px; /* Rounded corners */
+    color: #FFFFFF; /* White text color */
+    cursor: pointer; /* Makes it clear it's clickable */
+    font-size: 16px; /* Font size of button text */
+    padding: 10px 20px; /* Padding around text */
+    transition: background-color 0.3s; /* Transition for hover effect */
+}
+
+.btnsub input[type="submit"]:hover {
+    background-color: #0056b3; /* A slightly darker blue for hover */
+}
+
+
+
+/* payment page  */
+/* Regular styles for screens wider than 700px */
+
+/* .header3 .home-button-wrapper {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.header3 .text-box4 {
+    text-align: center;
+    padding-top: 50px;
+}
+
+.header3 .navigation-box {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.nav-item.active {
+    font-weight: bold;
+    color: #007BFF;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+}
+
+.paymentdetails {
+    width: 100%;
+}
+
+.paytable {
+    width: 100%;
+}
+
+.paytable .table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.paytable .table td {
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+}
+
+.footer-content {
+    text-align: center;
+    padding: 20px 0;
+} */
+
+/* Media Queries for screens up to 700px */
+
+@media only screen and (max-width: 700px) {
+    .header3 .home-button-wrapper {
+        position: static;
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .header3 .text-box4 h1 {
+        font-size: 24px;
+    }
+
+    .paymentdetails, .paytable {
+        padding: 10px;
+    }
+
+    .paymentdetails table, .paytable table {
+        width: 100%;
+    }
+
+    .paymentdetails input, .paytable input, .paymentdetails select, .paytable select {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+    }
+
+    .paymentdetails label, .paytable label {
+        display: block;
+        margin-bottom: 5px;
+    }
+	
+}
+/* Assuming you have a flexbox/grid layout */
+.content-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.paymentdetails, .paytable {
+    flex: 1;
+}
+
+@media only screen and (max-width: 700px) {
+    .paymentdetails, .paytable {
+        width: 100%; /* takes the full width of the screen */
+    }
+
+    .paymentdetails {
+        order: 1; /* appears first */
+    }
+
+    .paytable {
+        order: 2; /* appears second */
+    }
+}
+.notification {
+    border: 1px solid #4CAF50; /* Change this to your desired color */
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+    background-color: #e8f5e9; /* Light green background */
+    max-width: 600px;
+    margin: 20px auto; /* Centering the box if the parent is full screen */
+}
+
+.notification h2 {
+    color: #2E7D32; /* Dark green color for heading */
+    margin-top: 0;
+}
+
+.notification p {
+    color: #666;
+    line-height: 1.5;
+}
+
+/* Table styling */
+.table3 {
+    width: 90%; 
+    max-width: 600px; 
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.table3:hover {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.table3 td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #e0e0e0; 
+}
+
+.table3 tr:last-child td {
+    border-bottom: none; 
+}
+
+.table3 tr td:first-child {
+    font-weight: 500;
+}
+
+/* Row hover effect */
+.table3 tr:not(:first-child):hover {
+    background-color: #f5f5f5;
+}
+
+/* Header styling */
+.table3 tr:first-child td {
+    background-color: #f0f0f0;
+    font-weight: bold;
+    border-bottom: 2px solid #d0d0d0; 
+}
+
+/* Column with background color of gray */
+.table3 td[style*="background-color: gray"] {
+    background-color: #666; 
+    color: #fff;
+    font-weight: 500;
+}
+
+/* Centering content */
+/* center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+} */
+
+p {
+    margin: 0;
+}
+
